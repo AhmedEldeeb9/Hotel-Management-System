@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="730.0" prefWidth="1366.0" style="-fx-background-image:url(img/cust.jpg)" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hotelmanagementsystem.CustomerScreenController">
+   <children>
+      <JFXTreeTableView fx:id="treeview" layoutX="301.0" layoutY="46.0" opacity="0.7" prefHeight="594.0" prefWidth="1326.0" style="-fx-background-color: #fff; -fx-background-radius: 6 px;" stylesheets="@Style.css" AnchorPane.bottomAnchor="114.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0" />
+      <Pane layoutX="19.0" layoutY="636.0" opacity="0.7" prefHeight="80.0" prefWidth="1326.0" style="-fx-background-color: #fff; -fx-background-radius: 6 px;" AnchorPane.bottomAnchor="16.0">
+         <children>
+            <JFXTextField fx:id="searchText" focusColor="#09e2a7" labelFloat="true" layoutX="653.0" layoutY="28.0" prefHeight="25.0" prefWidth="255.0" promptText="Search by Room Number" />
+            <JFXButton buttonType="RAISED" layoutX="526.0" layoutY="28.0" onMouseClicked="#searchByRoomNum" prefHeight="30.0" prefWidth="100.0" ripplerFill="WHITE" style="-fx-background-color: #09e2a7;" text="Search" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="406.0" layoutY="28.0" onMouseClicked="#back" prefHeight="30.0" prefWidth="100.0" ripplerFill="WHITE" style="-fx-background-color: #09e2a7;" text="Back" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
